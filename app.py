@@ -5,11 +5,11 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return render_template('index.html', message='Hello from cicdinclass')
+    return render_template('index.html', message='Welcome to Edu-Vault!')
 
 @app.route('/api')
 def api():
-    return jsonify(message='Hello from cicdinclass')
+    return jsonify(message='Welcome to Edu-Vault!')
 
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))
